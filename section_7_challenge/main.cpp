@@ -26,7 +26,10 @@ int main ()
     vect_2d.push_back(vector1);
     vect_2d.push_back(vector2);
     print_2d_vector(vect_2d);
-
+    
+    vector1.at(0) = 999;
+    print_2d_vector(vect_2d);
+    print_1d_vector(vector1);
 }
 
 void print_1d_vector(vector <int> vect)
