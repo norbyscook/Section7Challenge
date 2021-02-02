@@ -19,6 +19,11 @@ int main ()
     
     vector2.push_back(200);
     vector2.push_back(300);
+    
+    vector <vector <int>> vect_2d;
+    vect_2d.push_back(vector1);
+    vect_2d.push_back(vector2);
+
 
 }
 
@@ -27,5 +32,19 @@ void print_1d_vector(vector <int> vect)
     for(auto i = vect.begin(); i != vect.end(); i++)
     {
         cout << *i << endl;
+    }
+}
+
+void print_2d_vector(vector <vector <int>> vect)
+{
+    int v_size_i = vect.size();
+ 
+    for (int i = 0; i < v_size_i; i++)
+    {
+        int v_size_j = vect.at(i).size();
+        for (int j = 0; j < v_size_j; j++)
+        {
+            cout << vect.at(i).at(j);
+        }
     }
 }
